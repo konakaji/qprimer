@@ -50,6 +50,9 @@ class StimPureState(PureState):
     def cz(self, c_index, t_index):
         self.circuit.cz([c_index, t_index])
 
+    def t(self, index):
+        raise NotImplementedError("Stim does not support non Clifford gate")
+
     def measure(self, index):
         return int(self.circuit.measure(index))
 
