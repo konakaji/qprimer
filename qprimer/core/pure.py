@@ -21,6 +21,10 @@ class PureState(ABC):
         pass
 
     @abstractmethod
+    def t(self, index):
+        pass
+
+    @abstractmethod
     def sdag(self, index):
         pass
 
@@ -78,16 +82,4 @@ class PureState(ABC):
 
     @abstractmethod
     def draw_and_show(self):
-        pass
-
-    @abstractmethod
-    def get_samples(self, nshot):
-        pass
-
-    @abstractmethod
-    def get_counts(self, nshot):
-        pass
-
-    @abstractmethod
-    def get_state_vector(self):
         pass
