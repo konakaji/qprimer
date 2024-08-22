@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="qprimer",
-    version="0.0.2",
+    version="0.0.3",
     author="kohei nakaji",
     description="You can receive the message 'Hello!!!'",
     long_description=long_description,
