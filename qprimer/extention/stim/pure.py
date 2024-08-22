@@ -42,13 +42,13 @@ class StimPureState(PureState):
         raise NotImplementedError("Stim does not support non Clifford gate")
 
     def cnot(self, c_index, t_index):
-        self.circuit.cnot([c_index, t_index])
+        self.circuit.cnot(c_index, t_index)
 
     def cy(self, c_index, t_index):
-        self.circuit.cy([c_index, t_index])
+        self.circuit.cy(c_index, t_index)
 
     def cz(self, c_index, t_index):
-        self.circuit.cz([c_index, t_index])
+        self.circuit.cz(c_index, t_index)
 
     def t(self, index):
         raise NotImplementedError("Stim does not support non Clifford gate")
